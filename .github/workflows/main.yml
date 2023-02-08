@@ -1,23 +1,17 @@
 name: Run Comparison Script
 on:
-  workflow_dispatch:
-    inputs:
-      firstBranch:
-        description: 'First branch name / commit SHA'
-        default: 'main'
-        required: true
-      secondBranch:
-        description: 'Second branch name / commit SHA'
-        default: 'main'
-        required: true
-jobs:
-  validate:
+  pull_request_target:
+    branches: [ "master" ]
+    types: [opened]
+  
+jobs:     
+  compare:
     runs-on: ubuntu-latest
     steps:
-      - name: Oxygen Comparison Script
+      - name: Comparison Action
         uses: oxygenxml/oxygen-script-comparison-action@v1.0.0
         env:
           SCRIPTING_LICENSE_KEY: ${{secrets.SCRIPTING_LICENSE_KEY}}
         with:
-          firstBranch: ${{ inputs.firstBranch }}
-          secondBranch: ${{ inputs.secondBranch }}
+          firstBranch: master
+          secondBranch: ${{ github.event.pull_request.head.sha }}
