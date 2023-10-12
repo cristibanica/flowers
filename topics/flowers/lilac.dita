@@ -4,7 +4,10 @@
  <title>Lilac</title>
  <body>
   <p><i>From Wikipedia, the free encyclopedia.</i></p>
-  <?oxy_delete author="dorinajitianu" timestamp="20201019T122257+0000" content="&lt;p&gt;&lt;b&gt;Lilac&lt;/b&gt; (&lt;b&gt;Syringa&lt;/b&gt;)&lt;indexterm&gt;flowers&lt;indexterm&gt;summer&lt;indexterm&gt;lilac&lt;/indexterm&gt;&lt;/indexterm&gt;&lt;/indexterm&gt; is a &lt;xref keyref=&quot;flowers.genus&quot; format=&quot;dita&quot;&gt;genus&lt;/xref&gt; of about 20–25 species of flowering plants in the olive family (&lt;b&gt;Oleaceae&lt;/b&gt;), native to Europe and Asia.&lt;/p&gt;"?>
+  <p><b>Lilac</b>
+     (<b>Syringa</b>)<indexterm>flowers<indexterm>summer<indexterm>lilac</indexterm></indexterm></indexterm>
+   is a <xref keyref="flowers.genus" format="dita">genus</xref> of about 20–25 species of flowering
+   plants in the olive family (<b>Oleaceae</b>), native to Europe and Asia.</p>
   <p><image href="../../images/Lilac.jpg" scale="75"/></p>
   <p>They are deciduous shrubs or small trees, ranging in size from 2–10 m tall, with stems up to
    20–30 cm diameter. The leaves are opposite (occasionally in whorls of three) in arrangement, and
